@@ -1,3 +1,34 @@
+/************************* utilities  *************************/
 body {
   font-family: "Montserrat", sans-serif;
+}
+.sp-max-w {
+  max-width: 1320px;
+}
+.sp-fs-7 {
+  font-size: 0.8rem;
+}
+
+/************************* header  *************************/
+/* bannerino */
+#bannerino {
+  height: 50px;
+}
+#bannerino button img {
+  height: 30px;
+}
+/* jumbo */
+header .jumbo-tron {
+  padding: 200px 0 40px;
+  background-image: url(../img/jumbo-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/************************* media query  *************************/
+@media screen and (min-width: 1400px) {
+  .sp-fs-7 {
+    font-size: 1rem;
+  }
 }

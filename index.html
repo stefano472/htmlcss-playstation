@@ -15,12 +15,77 @@
 <body>
     <!-- header con titolo nav e jumbo-tron con selezione -->
     <header>
-        <!-- nav con bannerino sony in alto -->
-        <nav></nav>
+        <!-- bannerino sony in alto -->
+        <div id="bannerino" class="bg-dark text-end">
+            <img src="img/sony_logo.svg" alt="bannerino" class="h-100 p-3">
+        </div>
+        <!-- nav -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid sp-max-w sp-fs-7">
+                <a class="navbar-brand" href="#">
+                    <img src="img/play_logo.svg" alt="logo ps">
+                </a>
+                <button class="navbar-toggler fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Giochi
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Hardware
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Servizi
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Novità
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Fai Acquisti
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Supporto
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        My Playstation
+                    </a>
+                    <button type="submit" class="btn btn-secondary rounded-pill me-3">Accedi</button>
+                    <button class="btn btn-outline-secondary" type="submit">
+                        <img src="img/lens.svg" alt="search btn" height="25px">
+                    </button>
+                </div>
+            </div>
+        </nav>
         <!-- jumbo-tron section -->
-        <section class="jumbo-tron"></section>
+        <section class="jumbo-tron">
+            <div class="container-fluid">
+                <img src="img/returnal-hero-banner-logo.png" alt="banner header" height="40px">
+                <div class="ms-2 text-white">
+                    <h2>Rompi il cerchio</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At qui error dolorem provident beatae quibusdam et, delectus expedita illum maiores labore blanditiis cupiditate nesciunt voluptatibus, aspernatur asperiores alias mollitia nam?</p>
+                    <a class="btn btn-danger rounded-pill" href="#">Acquista Ora</a>
+                </div>
+            </div>
+        </section>
         <!-- selezione card jumbo -->
-        <div id="selection-jumbo-tron"></div>
+        <div id="selection-jumbo-tron">
+
+        </div>
     </header>
     <main>
         <!-- main section -->
