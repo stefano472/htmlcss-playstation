@@ -17,7 +17,7 @@ body {
 
 /************************* header  *************************/
 /* jumbo */
-header .jumbo-tron {
+#jumbo-tron {
   padding: 13rem 0 3rem;
   background-image: url(../img/jumbo-bg.png);
   background-repeat: no-repeat;
@@ -25,6 +25,15 @@ header .jumbo-tron {
   background-size: cover;
 }
 
+/************************* main  *************************/
+/* advertise */
+#advertise {
+  padding: 13rem 0 3rem;
+  background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
 /************************* media query  *************************/
 @media screen and (min-width: 1200px) {
   .sp-fs-7 {
