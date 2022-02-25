@@ -20,6 +20,9 @@ body {
 .sp-h-50 {
   height: 50px;
 }
+a {
+  cursor: pointer;
+}
 
 /************************* header  *************************/
 /* jumbo */
@@ -47,6 +50,20 @@ body {
 /* ps now */
 #ps-now {
   background-color: #161c3b;
+}
+
+/************************* footer  *************************/
+/* general link */
+#link {
+  background-color: #00439c;
+}
+#link ul {
+  list-style-type: none;
+}
+#link li > a {
+  font-size: 0.8rem;
+  color: white;
+  text-decoration: none;
 }
 
 /************************* media query  *************************/

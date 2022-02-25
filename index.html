@@ -29,26 +29,38 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Giochi
-                        </a>
-                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Hardware
-                        </a>
-                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Servizi
-                        </a>
-                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Novità
-                        </a>
-                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Fai Acquisti
-                        </a>
-                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Supporto
-                        </a>
-                    </div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Giochi
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Hardware
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Servizi
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Novità
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Fai Acquisti
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Supporto
+                            </a>
+                        </li>
+                    </ul>
                     <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         My Playstation
                     </a>
@@ -283,15 +295,15 @@
                 <p>Sconti pazzeschi, collezioni curate e saldi stagionali su PS5, PS4 e 4 PS VR, tutti in un unico posto.</p>
             </div>
             <div class="row gy-3">
-                <div class="col-12 col-md-4">
+                <a class="col-12 col-md-4" href="#">
                     <img src="img/playstation-store-games-under-20-spotlight.jpg" class="w-100 sp-rounded" alt="img1 discount">
-                </div>
-                <div class="col-12 col-md-4">
+                </a>
+                <a class="col-12 col-md-4" href="#">
                     <img src="img/playstation-store-golden-week-sale-spotlight.jpg" class="w-100 sp-rounded" alt="img1 discount">
-                </div>
-                <div class="col-12 col-md-4">
+                </a>
+                <a class="col-12 col-md-4" href="#">
                     <img src="img/playstation-store-free-to-play-spotlight.png" class="w-100 sp-rounded" alt="img1 discount">
-                </div>
+                </a>
             </div>
         </section>
         <section id="ps-now" class="px-sm-3">
@@ -319,23 +331,72 @@
                 <h1>Seguici sui social media</h1>
             </div>
             <div class="row gy-3 sp-max-w-md mx-md-auto">
-                <a class="col-6 col-sm-3">
+                <a class="col-6 col-sm-3" href="#">
                     <img src="img/twitter.jpg" class="w-100 sp-rounded" alt="img1 discount">
                 </a>
-                <a class="col-6 col-sm-3">
+                <a class="col-6 col-sm-3" href="#">
                     <img src="img/facebook.jpg" class="w-100 sp-rounded" alt="img1 discount">
                 </a>
-                <a class="col-6 col-sm-3">
+                <a class="col-6 col-sm-3" href="#">
                     <img src="img/instagram.jpg" class="w-100 sp-rounded" alt="img1 discount">
                 </a>
-                <a class="col-6 col-sm-3">
+                <a class="col-6 col-sm-3" href="#">
                     <img src="img/youtube.png" class="w-100 sp-rounded" alt="img1 discount">
                 </a>
             </div>
         </section>
         <!-- general link -->
-        <section id="link">
-            
+        <section id="link" class="py-5 px-sm-3 text-white">
+            <div class="container-fluid sp-max-w-xxl">
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-3">
+                        <img src="img/ps-footer.svg" alt="logo footer" class="mb-2">
+                        <div class="custom-select">
+                            <label for="language">
+                                <i class="fa-solid fa-globe"></i> Country / Region:
+                            </label>
+                            <select class="form-select form-select-sm d-inline w-auto" id="language">
+                                <option selected>Select</option>
+                                <option value="1">Italy</option>
+                                <option value="2">UK</option>
+                                <option value="3">Spain</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row">
+                            <ul class="col-12 col-md-4">
+                                <li><a href="#">Link footer n.</a></li>
+                                <li><a href="#">Link footer n.</a></li>
+                                <li><a href="#">Link footer n.</a></li>
+                                <li><a href="#">Link footer n.</a></li>
+                                <li><a href="#">Link footer n.</a></li>
+                            </ul>
+                            <ul class="col-12 col-md-4">
+                                <li><a href="#">Link footer n.</a></li>
+                                <li><a href="#">Link footer n.</a></li>
+                                <li><a href="#">Link footer n.</a></li>
+                                <li><a href="#">Link footer n.</a></li>
+                                <li><a href="#">Link footer n.</a></li>
+                                <li><a href="#">Link footer n.</a></li>
+                                <li><a href="#">Link footer n.</a></li>
+                            </ul>
+                            <ul class="col-12 col-md-4">
+                                <li><a href="#">Link footer n.</a></li>
+                                <li><a href="#">Link footer n.</a></li>
+                                <li><a href="#">Link footer n.</a></li>
+                            </ul>
+                        </div>  
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <img class="sp-h-50 mb-3" src="img/sie-logo.svg" alt="Sony Entertainment logo">
+                        <p class="sp-fs-7">
+                            <span>Website 2021 Sony Interactive Entertainment Europe Limited. Tutti i contenuti, nomi dei giochi, nomi commerciali e/o di abbigliamento, marchi registrati, grafica e immagini associati sono marchi registrati e/o materiale protetto da copyright dei rispettivi proprietari. Tutti i diritti rivervati.</span>
+                            <a class="text-underline text-white" href="#">Maggiori info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
     </footer>
 </body>
