@@ -5,8 +5,11 @@ body {
 .sp-d-unset {
   display: unset;
 }
-.sp-max-w {
+.sp-max-w-xxl {
   max-width: 1320px;
+}
+.sp-max-w-md {
+  max-width: 744px;
 }
 .sp-fs-7 {
   font-size: 0.8rem;
