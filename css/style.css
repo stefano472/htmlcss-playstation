@@ -8,26 +8,25 @@ body {
 .sp-fs-7 {
   font-size: 0.8rem;
 }
-
-/************************* header  *************************/
-/* bannerino */
-#bannerino {
+.sp-rounded {
+  border-radius: 1rem;
+}
+.sp-h-50 {
   height: 50px;
 }
-#bannerino button img {
-  height: 30px;
-}
+
+/************************* header  *************************/
 /* jumbo */
 header .jumbo-tron {
-  padding: 200px 0 40px;
+  padding: 13rem 0 3rem;
   background-image: url(../img/jumbo-bg.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   background-size: cover;
 }
 
 /************************* media query  *************************/
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
   .sp-fs-7 {
     font-size: 1rem;
   }

@@ -16,7 +16,7 @@
     <!-- header con titolo nav e jumbo-tron con selezione -->
     <header>
         <!-- bannerino sony in alto -->
-        <div id="bannerino" class="bg-dark text-end">
+        <div id="bannerino" class="bg-dark text-end sp-h-50">
             <img src="img/sony_logo.svg" alt="bannerino" class="h-100 p-3">
         </div>
         <!-- nav -->
@@ -29,38 +29,26 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Giochi
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Hardware
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Servizi
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Novità
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Fai Acquisti
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Supporto
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Giochi
+                        </a>
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Hardware
+                        </a>
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Servizi
+                        </a>
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Novità
+                        </a>
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Fai Acquisti
+                        </a>
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Supporto
+                        </a>
+                    </div>
                     <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         My Playstation
                     </a>
@@ -72,19 +60,38 @@
             </div>
         </nav>
         <!-- jumbo-tron section -->
-        <section class="jumbo-tron">
-            <div class="container-fluid">
-                <img src="img/returnal-hero-banner-logo.png" alt="banner header" height="40px">
-                <div class="ms-2 text-white">
+        <section class="jumbo-tron mb-5 px-sm-3">
+            <div class="container-fluid sp-max-w">      
+                <img src="img/returnal-hero-banner-logo.png" alt="banner header" class="sp-h-50">
+                <div class="text-white col-lg-4 ms-2 mt-2">
                     <h2>Rompi il cerchio</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At qui error dolorem provident beatae quibusdam et, delectus expedita illum maiores labore blanditiis cupiditate nesciunt voluptatibus, aspernatur asperiores alias mollitia nam?</p>
-                    <a class="btn btn-danger rounded-pill" href="#">Acquista Ora</a>
                 </div>
+                <a class="btn btn-danger rounded-pill ms-2" href="#">Acquista Ora</a>
             </div>
         </section>
         <!-- selezione card jumbo -->
-        <div id="selection-jumbo-tron">
-
+        <div id="selection-jumbo-tron" class="container-fluid px-sm-4 sp-max-w">
+            <div class="row gy-4">
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <img class="sp-rounded w-100" src="img/returnal-listing-thumb-01-ps5.jpg" alt="first pic">
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <img class="sp-rounded w-100" src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="second pic">
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <img class="sp-rounded w-100" src="img/returnal-listing-thumb-01-ps5.jpg" alt="third pic">
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <img class="sp-rounded w-100" src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="fourth pic">
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <img class="sp-rounded w-100" src="img/returnal-listing-thumb-01-ps5.jpg" alt="fifth pic">
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <img class="sp-rounded w-100" src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="sixth pic">
+                </div>
+            </div>
         </div>
     </header>
     <main>
