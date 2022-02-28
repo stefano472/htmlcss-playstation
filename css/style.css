@@ -26,13 +26,23 @@ body {
 .sp-h-25 {
   height: 25px;
 }
-a {
-  cursor: pointer;
+.interactive-link {
+  border-radius: 1rem;
+  transition: 0.3s;
+  background-color: black;
+  box-shadow: 6px 6px 10px #666666, -6px -6px 10px #ffffff;
+}
+.interactive-link:hover {
+  transform: scale(1.03);
+  box-shadow: none;
 }
 
 /************************* bootstrap overrule  *************************/
 .dropdown-item {
   width: auto !important;
+}
+.btn {
+  border: 3px solid transparent;
 }
 .btn:hover {
   /* outline-offset: -2px;
@@ -46,9 +56,15 @@ nav a:hover {
   color: black !important;
 }
 .search-nav {
+  margin-left: 1rem;
+  border: none;
   transition: 0.3s;
+  border-radius: 0.5rem;
+  background: #f8f9fa;
+  box-shadow: 5px 5px 18px #636464, -5px -5px 18px #ffffff;
 }
-.search-nav:hover {
+.search-nav:hover,
+.search-nav:focus {
   transform: scale(1.2);
   box-shadow: none;
 }
@@ -61,15 +77,20 @@ nav a:hover {
   background-size: cover;
 }
 /* jumbo selection */
-.card-active {
-  transition: transform 0.4s;
-  cursor: pointer;
+.sp-btn-card {
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
-.card-active:hover {
+.sp-card-active {
+  transition: transform 0.4s;
+}
+#selection-jumbo-tron button:hover .sp-card-active {
   transform: translateY(-15px);
   box-shadow: 0px 6px 10px 5px rgba(0, 0, 0, 0.2);
 }
-.card-active:target {
+#selection-jumbo-tron button:active .sp-card-active,
+#selection-jumbo-tron button:focus .sp-card-active {
   transform: translateY(-15px);
   outline-offset: 1px;
   outline: 3px solid #0d6efd;
@@ -78,7 +99,6 @@ nav a:hover {
 /************************* main  *************************/
 /* console */
 .console-active {
-  cursor: pointer;
   opacity: 50%;
   transition: opacity 0.4s;
 }
@@ -86,7 +106,8 @@ nav a:hover {
   opacity: 100%;
   box-shadow: inset 0 -2px 0 0 #0d6efd;
 }
-.console-active:target {
+.console-active:active,
+.console-active:focus {
   opacity: 100%;
   color: #0d6efd;
   box-shadow: inset 0 -2px 0 0 #0d6efd;
@@ -102,7 +123,15 @@ nav a:hover {
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
+/* new release */
+.new-release-card {
+  transition: 0.2s;
+}
+.new-release-card:hover {
+  transform: scale(0.95);
+  outline-offset: 2px;
+  outline: 3px solid rgb(255, 255, 255);
+}
 /* ps-plus */
 #ps-plus {
   background-color: #bebcbb;
@@ -131,6 +160,28 @@ nav a:hover {
 }
 
 /************************* media query  *************************/
+@media screen and (min-width: 994px) {
+  #selection-jumbo-tron button:hover .sp-title-card {
+    transform: translate(-50%, -10px);
+    opacity: 1;
+  }
+  #selection-jumbo-tron button:active .sp-title-card {
+    transform: translate(-50%, -10px);
+    opacity: 1;
+  }
+  #selection-jumbo-tron button:focus .sp-title-card {
+    transform: translate(-50%, -10px);
+    opacity: 1;
+  }
+  .sp-title-card {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    transition: 0.4s;
+    opacity: 0;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .sp-fs-7 {
     font-size: 1rem;
