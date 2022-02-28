@@ -6,17 +6,17 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 body::-webkit-scrollbar {
-  width: 0.9vw;
+  width: 1.1rem;
 }
 body::-webkit-scrollbar-track {
   margin-block: 0.5rem;
-  border-radius: 0.9vw;
-  box-shadow: inset 3px 3px 3px #ccc, inset -3px -3px 3px #ffffff;
+  border-radius: 1.1rem;
+  box-shadow: inset 4px 4px 4px #ccc, inset -4px -4px 4px #ffffff;
 }
 body::-webkit-scrollbar-thumb {
-  border-radius: 0.9vw;
+  border-radius: 1.1rem;
   background: #e6e6e6;
-  box-shadow: inset -2px -2px 2px #555555, inset 2px 2px 2px #ffffff;
+  box-shadow: inset -1px -1px 1px #555555, inset 1px 1px 1px #ffffff;
 }
 .sp-d-unset {
   display: unset;
@@ -102,6 +102,7 @@ nav a:hover {
 }
 .sp-title-card {
   position: absolute;
+  top: 100%;
   left: 50%;
   transform: translate(-50%, 10px);
   transition: 0.4s;
@@ -109,7 +110,7 @@ nav a:hover {
 }
 #selection-jumbo-tron button:hover .sp-card-active {
   transform: translateY(-15px);
-  box-shadow: 0px 6px 10px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 10px 5px rgba(0, 0, 0, 0.2);
 }
 #selection-jumbo-tron button:active .sp-card-active,
 #selection-jumbo-tron button:focus .sp-card-active {
@@ -183,6 +184,7 @@ nav a:hover {
 
 /************************* media query  *************************/
 @media screen and (min-width: 992px) {
+  /* jumbo-tron selection effects */
   #selection-jumbo-tron button:hover .sp-title-card {
     transform: translate(-50%, -10px);
     opacity: 1;
@@ -198,6 +200,7 @@ nav a:hover {
 }
 
 @media screen and (min-width: 1200px) {
+  /* font-size nav-bar */
   .sp-fs-7 {
     font-size: 1rem;
   }
