@@ -223,3 +223,16 @@ nav a.dropdown-toggle::after {
     font-size: 1rem;
   }
 }
+
+@media screen and (max-width: 350px) {
+  /* logo jumbo-tron */
+  #jumbo-tron img {
+    height: 30px;
+  }
+  /* adattamento cards */
+  #selection-jumbo-tron .col-6,
+  #new-release .col-6 {
+    width: 100%;
+    text-align: center;
+  }
+}
