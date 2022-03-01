@@ -65,8 +65,23 @@ body::-webkit-scrollbar-thumb {
 
 /************************* header  *************************/
 /* navbar */
-nav a:hover {
+.nav-item:hover a {
   color: black !important;
+}
+nav a.dropdown-toggle::after {
+  content: url(../img/chevron-down-solid.svg);
+  width: 0.6rem;
+  vertical-align: middle;
+  border: none;
+}
+.nav-item:hover a.dropdown-toggle::after {
+  content: url(../img/chevron-down-solid-hover.svg);
+}
+.nav-item:focus-within a {
+  color: black !important;
+}
+.nav-item:focus-within a.dropdown-toggle::after {
+  content: url(../img/chevron-up-solid.svg);
 }
 .search-nav {
   margin-left: 1rem;
@@ -98,6 +113,7 @@ nav a:hover {
   background-color: transparent;
 }
 .sp-card-active {
+  opacity: 70%;
   transition: transform 0.4s;
 }
 .sp-title-card {
@@ -110,11 +126,13 @@ nav a:hover {
 }
 #selection-jumbo-tron button:hover .sp-card-active {
   transform: translateY(-15px);
+  opacity: 100%;
   box-shadow: 0 6px 10px 5px rgba(0, 0, 0, 0.2);
 }
 #selection-jumbo-tron button:active .sp-card-active,
 #selection-jumbo-tron button:focus .sp-card-active {
   transform: translateY(-15px);
+  opacity: 100%;
   outline-offset: 1px;
   outline: 3px solid #0d6efd;
 }
